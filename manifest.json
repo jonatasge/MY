@@ -17,7 +17,7 @@
   },
   "content_scripts": [
     {
-      "js": ["script.js"],
+      "js": ["main.js"],
       "matches": ["https://mangayabu.top/*"]
     }
   ]

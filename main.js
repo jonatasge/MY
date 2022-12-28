@@ -1,7 +1,7 @@
 const styles = ['ads', 'nav'];
-const scripts = ['nav'];
+const scripts = ['helpers', 'nav'];
 
-const host = 'http://127.0.0.1:8080' || 'https://jonatasgev.github.io/MY';
+const host = 'https://jonatasgev.github.io/MY';
 
 styles.forEach((name) => {
   const link = document.createElement('link');

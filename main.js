@@ -1,22 +1,17 @@
-const styles = [];
-const scripts = [];
+const styles = ['ads', 'nav'];
+const scripts = ['nav'];
 
 const host = 'http://127.0.0.1:8080' || 'https://jonatasgev.github.io/MY';
 
-document.querySelector('head').insertAdjacentHTML(
-  'beforeend',
-  styles.reduce(
-    (r, name) => `${r}
-    <link rel="stylesheet" href="${host}/styles/${name}.css" />`,
-    ''
-  )
-);
+styles.forEach((name) => {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = `${host}/styles/${name}.css`;
+  document.head.appendChild(link);
+});
 
-document.querySelector('body').insertAdjacentHTML(
-  'beforeend',
-  styles.reduce(
-    (r, name) => `${r}
-    <script src="${host}/scripts/${name}.js" />`,
-    ''
-  )
-);
+scripts.forEach((name) => {
+  const script = document.createElement('script');
+  script.src = `${host}/scripts/${name}.js`;
+  document.body.appendChild(script);
+});

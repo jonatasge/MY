@@ -1,4 +1,4 @@
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', () => {
   Observer({
     target: document.body,
     config: { attributes: true },
@@ -6,4 +6,4 @@ window.onload = function () {
       document.body.removeAttribute('style');
     },
   });
-};
+});

@@ -1,5 +1,5 @@
 const styles = ['ads', 'nav', 'settings', 'list', 'read'];
-const scripts = ['helpers', 'ads', 'nav'];
+const scripts = ['helpers', 'ads', 'nav', 'read'];
 
 const host = 'https://jonatasgev.github.io/MY';
 

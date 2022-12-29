@@ -1,0 +1,50 @@
+/* HEADER */
+.user-header {
+  padding: 0 !important;
+}
+
+.closeSettings {
+  display: inline-block;
+  padding: 16px !important;
+}
+
+.closeSettings > span {
+  font-size: 22px !important;
+  top: 5px !important;
+}
+
+.closeSettings > h2 {
+  font-size: 16px !important;
+  font-weight: 100 !important;
+  margin: 0 0 0 8px !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 375px) {
+  .closeSettings > h2 {
+    display: none !important;
+  }
+}
+
+/* FAVORITOS */
+.carousel-item {
+  box-sizing: border-box !important;
+  height: 280px !important;
+  max-height: 280px !important;
+}
+
+@media (max-width: 425px) {
+  .carousel-item {
+    padding: 4px !important;
+    width: 50% !important;
+  }
+
+  .carousel-item img {
+    width: 100%;
+  }
+}
+
+.card-text {
+  color: white !important;
+  font-weight: 400 !important;
+}

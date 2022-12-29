@@ -1,5 +1,20 @@
-.manga-index-header > span {
-  width: 100%;
+.manga-index-header a {
+  width: 100% !important;
+}
+
+.manga-index-header a .manga-index-item {
+  font-size: 14px !important;
+  height: 100% !important;
+  margin: 0 !important;
+}
+
+.manga-index-header .save-offline-svg {
+  margin: 0 8px 0 12px !important;
+}
+
+.manga-index-header .save-offline-svg,
+.manga-index-header .save-offline-svg svg {
+  height: 32px !important;
 }
 
 .manga-index-content {

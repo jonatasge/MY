@@ -1,5 +1,6 @@
 .google-auto-placed,
 .adsbygoogle,
-#vi-smartbanner {
+#vi-smartbanner,
+ins {
   display: none !important;
 }

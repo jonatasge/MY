@@ -32,9 +32,9 @@ const closeNaveSide = () => {
 };
 
 const bodyLockScroll = () => {
-  $('body').style.overflow = 'hidden';
+  $('body').classList.add('lock-scroll');
 };
 
 const bodyUnlockScroll = () => {
-  $('body').style.overflow = 'initial';
+  $('body').classList.remove('lock-scroll');
 };

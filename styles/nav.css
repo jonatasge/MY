@@ -1,3 +1,9 @@
+/* BODY */
+body.lock-scroll {
+  overflow: hidden !important;
+}
+
+/* HEADER */
 .nav-logo {
   width: 34px;
 }

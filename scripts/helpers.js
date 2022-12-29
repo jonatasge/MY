@@ -3,3 +3,13 @@ const $ = (ref1, ref2) => {
   if (elements.length > 1) return [...elements];
   return elements[0];
 };
+
+const NewObserver = (obs) => new MutationObserver((m) => m.forEach(obs));
+
+const Observer = ({
+  callback,
+  config = { attributes: true, childList: true, characterData: true },
+  target,
+}) => {
+  return NewObserver(callback).observe(target, config);
+};

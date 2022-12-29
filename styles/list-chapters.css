@@ -1,3 +1,9 @@
+.manga-index-header .links-wrap {
+  gap: 8px;
+  display: flex;
+  width: 100%;
+}
+
 .manga-index-header a {
   width: 100% !important;
 }

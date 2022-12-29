@@ -1,3 +1,9 @@
 .carousel-item .hover-buttons > .hover-btn:last-child {
   display: none !important;
 }
+
+@media (max-width: 375px) {
+  .manga-card {
+    width: 100% !important;
+  }
+}

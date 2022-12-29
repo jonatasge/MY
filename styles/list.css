@@ -1,0 +1,3 @@
+.carousel-item .hover-buttons > .hover-btn:last-child {
+  display: none !important;
+}

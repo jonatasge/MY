@@ -1,17 +1,40 @@
-const styles = ['ads', 'nav', 'settings', 'list', 'read'];
-const scripts = ['helpers', 'ads', 'nav', 'read'];
-
 const host = 'https://jonatasgev.github.io/MY';
 
-styles.forEach((name) => {
-  const link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = `${host}/styles/${name}.css`;
-  document.head.appendChild(link);
+const loadCSS = (name) => {
+  loadFile({
+    tag: 'link',
+    props: {
+      rel: 'stylesheet',
+      href: `${host}/styles/${name}.css`,
+    },
+    append: document.head,
+  });
+};
+
+const loadJS = (name) => {
+  loadFile({
+    tag: 'script',
+    props: { src: `${host}/scripts/${name}.js` },
+    append: document.body,
+  });
+};
+
+const loadFile = ({ tag, props, append }) => {
+  const e = document.createElement(tag);
+  Object.entries(props).forEach((p, v) => (e[p] = v));
+  append.appendChild(e);
+};
+
+loadFile({
+  tag: 'script',
+  props: { src: `${host}/modules.js` },
+  append: document.body,
 });
 
-scripts.forEach((name) => {
-  const script = document.createElement('script');
-  script.src = `${host}/scripts/${name}.js`;
-  document.body.appendChild(script);
-});
+const init = setInterval(() => {
+  if (typeof styles !== 'undefined') {
+    styles.forEach(loadCSS);
+    scripts.forEach(loadJS);
+    clearInterval(init);
+  }
+}, 100);

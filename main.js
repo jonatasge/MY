@@ -1,3 +1,4 @@
+// const host = 'http://127.0.0.1:8080';
 const host = 'https://jonatasgev.github.io/MY';
 
 const createElement = ({ tag, props, append = document.body }) => {
@@ -6,7 +7,7 @@ const createElement = ({ tag, props, append = document.body }) => {
   append.appendChild(e);
 };
 
-['scripts/helpers.js', 'init.js'].forEach((name) =>
+['scripts/helpers.js', 'scripts/init.js'].forEach((name) =>
   createElement({
     tag: 'script',
     props: {

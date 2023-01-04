@@ -1,7 +1,8 @@
+// const host = 'http://127.0.0.1:8080';
 const host = 'https://jonatasgev.github.io/MY';
 
 const styles = ['ads', 'nav', 'settings', 'list', 'list-chapters', 'read'];
-const scripts = ['ads', 'nav', 'list-chapters', 'read'];
+const scripts = ['ads', 'nav', 'list-chapters'];
 
 const loadCSS = (name) => {
   createElement({

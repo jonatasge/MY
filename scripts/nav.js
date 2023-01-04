@@ -3,12 +3,6 @@ $('.NavSide').insertAdjacentHTML(
   `<div class="NavSideOverlay hide" onclick="clickNavSideOverlay()"></div>`
 );
 
-const clickNavSideOverlay = () => {
-  hideNaveSideOverlay();
-  closeNaveSide();
-  bodyUnlockScroll();
-};
-
 $('#InitNavSide').addEventListener('click', () => {
   showNaveSideOverlay();
   bodyLockScroll();
@@ -18,6 +12,12 @@ $('#InitNavSide2').addEventListener('click', () => {
   hideNaveSideOverlay();
   bodyUnlockScroll();
 });
+
+const clickNavSideOverlay = () => {
+  hideNaveSideOverlay();
+  closeNaveSide();
+  bodyUnlockScroll();
+};
 
 const showNaveSideOverlay = () => {
   $('.NavSideOverlay').classList.remove('hide');

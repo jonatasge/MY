@@ -20,9 +20,12 @@ const listChapters = () => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  Observer({
-    target: $('#chapters-list'),
-    config: { childList: true },
-    callback: debounce(listChapters),
-  });
+  const target = $('#chapters-list');
+  if (target) {
+    Observer({
+      target,
+      config: { childList: true },
+      callback: debounce(listChapters),
+    });
+  }
 });

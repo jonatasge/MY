@@ -1,6 +1,7 @@
 .google-auto-placed,
 .adsbygoogle,
 #vi-smartbanner,
-#ad-container {
+#ad-container,
+*[id^='teaser'] {
   display: none !important;
 }

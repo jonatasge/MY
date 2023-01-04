@@ -2,6 +2,6 @@
   width: 100% !important;
 }
 
-.chapter-links a {
-  width: 100% !important;
+.section.table-of-contents > *:not(img) {
+  display: none !important;
 }
